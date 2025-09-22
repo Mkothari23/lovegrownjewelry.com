@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMIÈRE | Ethical Lab-Grown Diamonds - Ignite Your Eternal Sparkle</title>
+    <meta name="description" content="2025's most revolutionary jewelry platform. Ethically sourced lab-grown diamonds with AI customization, AR try-ons, and blockchain verification. 40% flash sales for members.">
+    <link rel="canonical" href="https://lumiere-jewelry.com" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="LUMIÈRE | Ethical Lab-Grown Diamonds" />
+    <meta property="og:description" content="Ignite Your Eternal Sparkle with 100% conflict-free, AI-customizable jewelry" />
+    <meta property="og:image" content="https://placehold.co/1200x630?text=LUMI%C3%88RE+Diamonds&font=inter" />
+    <meta property="og:url" content="https://lumiere-jewelry.com" />
+    <!-- Twitter Card -->
+    <meta name="twitter:title" content="LUMIÈRE | Ethical Lab-Grown Diamonds" />
+    <meta name="twitter:description" content="The future of jewelry is here: sustainable, customizable, and breathtaking" />
+    <meta name="twitter:image" content="https://placehold.co/1200x630?text=LUMI%C3%88RE+Diamonds&font=inter" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "LUMIÈRE Jewelry",
+      "description": "Ethical lab-grown diamond jewelry with AI customization",
+      "url": "https://lumiere-jewelry.com",
+      "image": "https://placehold.co/1200x630?text=LUMI%C3%88RE+Diamonds&font=inter"
+    }
+    </script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'luxury-gold': '#D4AF37',
+              'diamond-blue': '#0E4D92',
+              'ethical-green': '#2E8B57',
+            }
+          }
+        }
+      }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      .gradient-text {
+        background: linear-gradient(45deg, #D4AF37, #0E4D92);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .diamond-shape {
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      }
+    </style>
+</head>
+<body class="bg-white font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <a href="#" class="text-2xl font-bold gradient-text">LUMIÈRE</a>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#" class="text-gray-700 hover:text-luxury-gold">Collections</a>
+            <a href="#" class="text-gray-700 hover:text-luxury-gold">Custom Design</a>
+            <a href="#" class="text-gray-700 hover:text-luxury-gold">Why Lab-Grown?</a>
+            <a href="#" class="text-gray-700 hover:text-luxury-gold">Membership</a>
+            <button class="bg-luxury-gold text-white px-4 py-2 rounded-full hover:bg-opacity-90 transition">
+              Try AR
+            </button>
+          </div>
+          <div class="flex items-center md:hidden">
+            <button id="mobile-menu-button" class="text-gray-700">
+              <i data-lucide="menu"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 bg-black opacity-30 z-10"></div>
+      <img src="https://placehold.co/1920x1080?text=Diamond+Showcase&font=inter" alt="Luxury diamond jewelry collection" class="w-full h-screen object-cover">
+      <div class="absolute inset-0 flex items-center z-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+            <span class="gradient-text">Ignite Your Eternal Sparkle</span>
+          </h1>
+          <p class="text-xl md:text-2xl text-white mb-8 max-w-3xl mx-auto">
+            Sculptural. Sustainable. Unapologetically You. The future of fine jewelry is here with 100% ethical lab-grown diamonds.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <button class="bg-luxury-gold text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-opacity-90 transition">
+              Shop Now - 40% Flash Sale
+            </button>
+            <button class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-white hover:text-black transition">
+              Create Your Masterpiece
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Propositions -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Ethical Sourcing -->
+          <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition text-center">
+            <div class="flex justify-center mb-4">
+              <i data-lucide="leaf" class="w-12 h-12 text-ethical-green"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">100% Ethical Origins</h3>
+            <p class="text-gray-600">Every diamond grown in zero-emission labs with blockchain-tracked sourcing.</p>
+          </div>
+          
+          <!-- AR Try-On -->
+          <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition text-center">
+            <div class="flex justify-center mb-4">
+              <i data-lucide="smartphone" class="w-12 h-12 text-diamond-blue"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">AR Virtual Try-On</h3>
+            <p class="text-gray-600">See how our pieces look on you before buying with our augmented reality tech.</p>
+          </div>
+          
+          <!-- Customization -->
+          <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition text-center">
+            <div class="flex justify-center mb-4">
+              <i data-lucide="wand-2" class="w-12 h-12 text-luxury-gold"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">AI-Powered Design</h3>
+            <p class="text-gray-600">Co-create unique jewelry with our artificial intelligence design assistant.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <section class="py-12 bg-gradient-to-r from-diamond-blue to-ethical-green text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div>
+            <p class="text-4xl font-bold mb-2">100M+</p>
+            <p class="text-sm uppercase tracking-wider">Carats Grown</p>
+          </div>
+          <div>
+            <p class="text-4xl font-bold mb-2">40%</p>
+            <p class="text-sm uppercase tracking-wider">Less Carbon</p>
+          </div>
+          <div>
+            <p class="text-4xl font-bold mb-2">360°</p>
+            <p class="text-sm uppercase tracking-wider">Inspection</p>
+          </div>
+          <div>
+            <p class="text-4xl font-bold mb-2">24/7</p>
+            <p class="text-sm uppercase tracking-wider">Diamond Experts</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-gray-400">Created with Varnz Page Builder</p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Initialize icons
+        lucide.createIcons();
+        
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        mobileMenuButton.addEventListener('click', function() {
+          // Implement mobile menu toggle logic here
+          console.log('Mobile menu clicked');
+        });
+      });
+    </script>
+
+<!-- START GRP2 -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">AI-Powered Customization</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">Design your perfect jewelry with our AI assistant and see it on you instantly with AR technology</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6">
+        <div class="flex items-start gap-4">
+          <div class="p-3 bg-blue-100 rounded-full text-blue-600">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800">AI Design Assistant</h3>
+            <p class="text-gray-600 mt-2">Our AI learns your style preferences to suggest unique designs tailored just for you.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="p-3 bg-purple-100 rounded-full text-purple-600">
+            <i data-lucide="box-select" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800">3D Customization</h3>
+            <p class="text-gray-600 mt-2">Adjust every detail - from gemstone placement to metal finishes - in real-time.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="p-3 bg-green-100 rounded-full text-green-600">
+            <i data-lucide="smartphone" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800">AR Virtual Try-On</h3>
+            <p class="text-gray-600 mt-2">See how your creation looks on you before purchasing with our augmented reality feature.</p>
+          </div>
+        </div>
+
+        <button class="mt-6 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition-all">
+          Start Designing Now
+        </button>
+      </div>
+
+      <div class="relative">
+        <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-xl overflow-hidden shadow-lg">
+          <img src="https://placehold.co/800x600?text=AR+Try-On+Demo&font=inter" alt="Woman trying on virtual jewelry with AR" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute -bottom-4 -right-4 bg-white p-3 rounded-full shadow-md">
+          <i data-lucide="move-3d" class="w-8 h-8 text-purple-600"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END AI Customization & AR Try-On --><!-- START GRP3 -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Collections</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">Discover our handpicked selections of premium jewelry crafted for every occasion</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Collection 1 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-105">
+        <div class="relative">
+          <img src="https://placehold.co/600x400?text=Signature+Collection&font=inter" alt="Signature Collection" class="w-full h-64 object-cover">
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+            <h3 class="text-xl font-semibold text-white">Signature Collection</h3>
+          </div>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-600 mb-4">Timeless pieces that define elegance and sophistication</p>
+          <div class="flex items-center justify-between">
+            <span class="text-lg font-medium text-gray-900">From $299</span>
+            <button class="flex items-center text-indigo-600 hover:text-indigo-800 font-medium">
+              Explore
+              <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Collection 2 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-105">
+        <div class="relative">
+          <img src="https://placehold.co/600x400?text=Modern+Minimalist&font=inter" alt="Modern Minimalist Collection" class="w-full h-64 object-cover">
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+            <h3 class="text-xl font-semibold text-white">Modern Minimalist</h3>
+          </div>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-600 mb-4">Clean lines and understated beauty for everyday wear</p>
+          <div class="flex items-center justify-between">
+            <span class="text-lg font-medium text-gray-900">From $199</span>
+            <button class="flex items-center text-indigo-600 hover:text-indigo-800 font-medium">
+              Explore
+              <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Collection 3 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-105">
+        <div class="relative">
+          <img src="https://placehold.co/600x400?text=Statement+Pieces&font=inter" alt="Statement Pieces Collection" class="w-full h-64 object-cover">
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+            <h3 class="text-xl font-semibold text-white">Statement Pieces</h3>
+          </div>
+        </div>
+        <div class="p-6">
+          <p class="text-gray-600 mb-4">Bold designs that command attention and spark conversation</p>
+          <div class="flex items-center justify-between">
+            <span class="text-lg font-medium text-gray-900">From $499</span>
+            <button class="flex items-center text-indigo-600 hover:text-indigo-800 font-medium">
+              Explore
+              <i data-lucide="arrow-right" class="ml-2 w-5 h-5"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <button class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 transition-colors">
+        <i data-lucide="sparkles" class="mr-2 w-5 h-5"></i>
+        View All Collections
+      </button>
+    </div>
+  </div>
+</section>
+<!-- END Featured Collections --><!-- START GRP4 -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Ethical Sourcing & Blockchain Verification</h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">Every piece in our collection comes with transparent sourcing information and blockchain-verified authenticity.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="flex items-start mb-8">
+          <div class="bg-green-100 p-3 rounded-full mr-4">
+            <i data-lucide="leaf" class="text-green-600 w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Responsible Materials</h3>
+            <p class="text-gray-600">We partner with certified ethical mines and use recycled metals to minimize environmental impact.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start mb-8">
+          <div class="bg-blue-100 p-3 rounded-full mr-4">
+            <i data-lucide="users" class="text-blue-600 w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Fair Labor Practices</h3>
+            <p class="text-gray-600">All artisans in our supply chain receive fair wages and safe working conditions.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start">
+          <div class="bg-purple-100 p-3 rounded-full mr-4">
+            <i data-lucide="shield-check" class="text-purple-600 w-6 h-6"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Blockchain Verification</h3>
+            <p class="text-gray-600">Each item comes with a digital certificate stored on blockchain to guarantee authenticity and ethical sourcing.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-md">
+        <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden mb-6">
+          <img src="https://placehold.co/800x500?text=Blockchain+Verification&font=inter" alt="Blockchain verification process" class="w-full h-full object-cover">
+        </div>
+        <div class="text-center">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">How Our Verification Works</h3>
+          <ol class="text-left space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <span class="bg-gray-200 text-gray-800 font-medium rounded-full w-6 h-6 flex items-center justify-center mr-3">1</span>
+              <span>Material origin recorded on blockchain at sourcing</span>
+            </li>
+            <li class="flex items-start">
+              <span class="bg-gray-200 text-gray-800 font-medium rounded-full w-6 h-6 flex items-center justify-center mr-3">2</span>
+              <span>Each production step digitally signed by artisans</span>
+            </li>
+            <li class="flex items-start">
+              <span class="bg-gray-200 text-gray-800 font-medium rounded-full w-6 h-6 flex items-center justify-center mr-3">3</span>
+              <span>Final product receives unique NFT certificate</span>
+            </li>
+          </ol>
+          <button class="mt-6 px-6 py-3 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition-colors">
+            Verify Your Item
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END Ethical Sourcing & Blockchain Verification --><!-- START GRP5 -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Exclusive Membership Perks</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">Unlock premium benefits with our loyalty program</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8 mb-16">
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+          <i data-lucide="crown" class="text-purple-600 w-6 h-6"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-900">VIP Early Access</h3>
+        <p class="text-gray-600">Shop new collections 48 hours before public release</p>
+      </div>
+
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+          <i data-lucide="percent" class="text-blue-600 w-6 h-6"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-900">Members-Only Discounts</h3>
+        <p class="text-gray-600">Enjoy 15% off all year round plus seasonal bonus discounts</p>
+      </div>
+
+      <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+          <i data-lucide="gift" class="text-green-600 w-6 h-6"></i>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-900">Birthday Surprise</h3>
+        <p class="text-gray-600">Receive a special gift and double points during your birthday month</p>
+      </div>
+    </div>
+
+    <div class="bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl p-8 text-white">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <div class="mb-6 md:mb-0 md:mr-8">
+          <h3 class="text-2xl font-bold mb-2">Flash Sale Alert!</h3>
+          <p class="mb-4">Members get exclusive access to limited-time offers</p>
+          <div class="flex items-center space-x-2" id="countdown">
+            <div class="bg-white bg-opacity-20 px-3 py-1 rounded-lg">
+              <span class="font-mono text-xl" id="hours">12</span>
+            </div>
+            <span>:</span>
+            <div class="bg-white bg-opacity-20 px-3 py-1 rounded-lg">
+              <span class="font-mono text-xl" id="minutes">45</span>
+            </div>
+            <span>:</span>
+            <div class="bg-white bg-opacity-20 px-3 py-1 rounded-lg">
+              <span class="font-mono text-xl" id="seconds">30</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex-shrink-0">
+          <img src="https://placehold.co/400x300?text=Flash+Sale&font=inter" alt="Flash sale products" class="rounded-lg shadow-lg w-full max-w-xs">
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 text-center">
+      <button class="bg-gray-900 hover:bg-gray-800 text-white font-medium py-3 px-8 rounded-lg transition-colors flex items-center mx-auto">
+        <i data-lucide="star" class="w-5 h-5 mr-2"></i>
+        Join Our Membership Program
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Countdown timer
+    function updateCountdown() {
+      const now = new Date();
+      const endTime = new Date();
+      endTime.setHours(23, 59, 59, 999);
+      
+      const diff = endTime - now;
+      const hours = Math.floor(diff / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+      
+      document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+      document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+    }
+    
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+    
+    lucide.createIcons();
+  });
+</script>
+<!-- END GRP5 --><!-- START GRP6 -->
+<section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <!-- Interactive Quiz Section -->
+    <div class="mb-20">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Find Your Perfect Jewelry Match</h2>
+      <p class="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-12">Take our 30-second quiz to discover jewelry that matches your unique style.</p>
+      
+      <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 max-w-4xl mx-auto">
+        <div id="quiz-container">
+          <!-- Quiz Progress -->
+          <div class="flex items-center mb-8">
+            <div class="w-full bg-gray-200 rounded-full h-2.5">
+              <div id="quiz-progress" class="bg-indigo-600 h-2.5 rounded-full" style="width: 0%"></div>
+            </div>
+            <span id="quiz-counter" class="ml-4 text-gray-600">0/5</span>
+          </div>
+          
+          <!-- Question 1 (Visible by default) -->
+          <div id="question-1" class="quiz-question">
+            <h3 class="text-xl font-semibold mb-6">What's your go-to outfit style?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <button class="quiz-option py-3 px-4 border border-gray-200 rounded-lg hover:bg-indigo-50 transition flex items-center">
+                <i data-lucide="tshirt" class="mr-3 text-indigo-600"></i> Casual & Comfortable
+              </button>
+              <button class="quiz-option py-3 px-4 border border-gray-200 rounded-lg hover:bg-indigo-50 transition flex items-center">
+                <i data-lucide="briefcase" class="mr-3 text-indigo-600"></i> Professional & Polished
+              </button>
+              <button class="quiz-option py-3 px-4 border border-gray-200 rounded-lg hover:bg-indigo-50 transition flex items-center">
+                <i data-lucide="sparkles" class="mr-3 text-indigo-600"></i> Glamorous & Bold
+              </button>
+              <button class="quiz-option py-3 px-4 border border-gray-200 rounded-lg hover:bg-indigo-50 transition flex items-center">
+                <i data-lucide="leaf" class="mr-3 text-indigo-600"></i> Bohemian & Free-spirited
+              </button>
+            </div>
+          </div>
+          
+          <!-- Other Questions (Hidden by default) -->
+          <div id="question-2" class="quiz-question hidden">
+            <h3 class="text-xl font-semibold mb-6">Which metal tones do you prefer?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <button class="quiz-option py-3 px-4 border border-gray-200 rounded-lg hover:bg-indigo-50 transition flex items-center">
+                <i data-lucide="circle" class="mr-3 text-yellow-500"></i> Warm Golds
+              </button>
+              <button class="quiz-option py-3 px-4 border border-gray-200 rounded-lg hover:bg-indigo-50 transition flex items-center">
+                <i data-lucide="circle" class="mr-3 text-gray-400"></i> Cool Silvers
+              </button>
+              <button class="quiz-option py-3 px-4 border border-gray-200 rounded-lg hover:bg-indigo-50 transition flex items-center">
+                <i data-lucide="circle" class="mr-3 text-rose-500"></i> Rose Gold
+              </button>
+              <button class="quiz-option py-3 px-4 border border-gray-200 rounded-lg hover:bg-indigo-50 transition flex items-center">
+                <i data-lucide="circle" class="mr-3 text-indigo-600"></i> Mixed Metals
+              </button>
+            </div>
+          </div>
+          
+          <!-- Results will be shown here -->
+          <div id="quiz-results" class="hidden text-center py-8">
+            <i data-lucide="sparkles" class="mx-auto text-4xl text-indigo-600 mb-4"></i>
+            <h3 class="text-2xl font-bold mb-4">Your Perfect Match!</h3>
+            <p id="result-text" class="text-lg mb-6 max-w-lg mx-auto"></p>
+            <img id="result-image" src="https://placehold.co/400x300?text=Your+Style" alt="Recommended jewelry" class="mx-auto rounded-lg mb-6">
+            <button class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition">
+              Shop Your Recommendations
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Testimonials Section -->
+    <div>
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">What Our Customers Say</h2>
+      <p class="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-12">Join thousands of satisfied customers who found their perfect jewelry with us.</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <div class="flex items-center mb-4">
+            <img src="https://placehold.co/80x80?text=Sarah+M." alt="Sarah M." class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-semibold">Sarah M.</h4>
+              <div class="flex text-yellow-400">
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">"The AI recommendation quiz matched me with a necklace I never would have picked myself but now can't live without!"</p>
+          <div class="flex items-center text-sm text-gray-500">
+            <i data-lucide="calendar" class="w-4 h-4 mr-1"></i>
+            <span>Verified Purchase • May 2023</span>
+          </div>
+        </div>
+        
+        <!-- Testimonial 2 -->
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <div class="flex items-center mb-4">
+            <img src="https://placehold.co/80x80?text=James+L." alt="James L." class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-semibold">James L.</h4>
+              <div class="flex text-yellow-400">
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">"The blockchain verification gave me complete confidence in the ethical sourcing of my engagement ring."</p>
+          <div class="flex items-center text-sm text-gray-500">
+            <i data-lucide="calendar" class="w-4 h-4 mr-1"></i>
+            <span>Verified Purchase • March 2023</span>
+          </div>
+        </div>
+        
+        <!-- Testimonial 3 -->
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <div class="flex items-center mb-4">
+            <img src="https://placehold.co/80x80?text=Emma+K." alt="Emma K." class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-semibold">Emma K.</h4>
+              <div class="flex text-yellow-400">
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">"The AR try-on feature saved me so much time - I knew exactly how the earrings would look before buying!"</p>
+          <div class="flex items-center text-sm text-gray-500">
+            <i data-lucide="calendar" class="w-4 h-4 mr-1"></i>
+            <span>Verified Purchase • April 2023</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    lucide.createIcons();
+    
+    // Quiz functionality
+    const quizOptions = document.querySelectorAll('.quiz-option');
+    const questions = document.querySelectorAll('.quiz-question');
+    const quizProgress = document.getElementById('quiz-progress');
+    const quizCounter = document.getElementById('quiz-counter');
+    const quizResults = document.getElementById('quiz-results');
+    const resultText = document.getElementById('result-text');
+    const resultImage = document.getElementById('result-image');
+    
+    let currentQuestion = 1;
+    let answers = [];
+    
+    // Update quiz progress
+    function updateProgress() {
+      const progress = ((currentQuestion - 1) / questions.length) * 100;
+      quizProgress.style.width = `${progress}%`;
+      quizCounter.textContent = `${currentQuestion - 1}/${questions.length}`;
+    }
+    
+    // Handle option selection
+    quizOptions.forEach(option => {
+      option.addEventListener('click', function() {
+        // Store answer
+        answers.push(this.textContent.trim());
+        
+        // Hide current question
+        document.getElementById(`question-${currentQuestion}`).classList.add('hidden');
+        
+        // Show next question or results
+        currentQuestion++;
+        if (currentQuestion <= questions.length) {
+          document.getElementById(`question-${currentQuestion}`).classList.remove('hidden');
+        } else {
+          showResults();
+        }
+        
+        updateProgress();
+      });
+    });
+    
+    // Show quiz results
+    function showResults() {
+      quizResults.classList.remove('hidden');
+      
+      // Simple result logic (would be more sophisticated in production)
+      const styleMatch = answers[0].includes('Casual') ? 'minimalist' : 
+                        answers[0].includes('Professional') ? 'classic' :
+                        answers[0].includes('Glamorous') ? 'statement' : 'nature-inspired';
+      
+      const metalMatch = answers[1].includes('Gold') ? 'gold' :
+                         answers[1].includes('Silver') ? 'silver' :
+                         answers[1].includes('Rose') ? 'rose gold' : 'mixed metal';
+      
+      resultText.textContent = `Based on your style preferences, we recommend ${styleMatch} pieces in ${metalMatch}. These selections will complement your personal aesthetic while making a subtle yet distinctive statement.`;
+      
+      resultImage.src = `https://placehold.co/400x300?text=${encodeURIComponent(styleMatch)}+${encodeURIComponent(metalMatch)}`;
+    }
+  });
+</script>
+<!-- END Interactive Quiz & Testimonials --><!-- START GRP7 -->
+<section class="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <!-- FAQ Section -->
+    <div class="mb-20">
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Frequently Asked Questions</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- FAQ Item 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="flex items-start">
+            <i data-lucide="help-circle" class="text-indigo-600 w-6 h-6 mr-3 mt-1"></i>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">How does the AI customization work?</h3>
+              <p class="text-gray-600">Our AI analyzes your style preferences and body measurements to suggest perfect fits and designs. You can further refine recommendations with our interactive tools.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="flex items-start">
+            <i data-lucide="package" class="text-indigo-600 w-6 h-6 mr-3 mt-1"></i>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">What's your shipping policy?</h3>
+              <p class="text-gray-600">We offer free worldwide shipping on orders over $100. Most orders ship within 1-2 business days and arrive within 5-7 days via DHL Express.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="flex items-start">
+            <i data-lucide="refresh-cw" class="text-indigo-600 w-6 h-6 mr-3 mt-1"></i>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">Can I return customized items?</h3>
+              <p class="text-gray-600">Yes! We offer a 30-day return window for all items, including customized pieces. Returns are free for members.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- FAQ Item 4 -->
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <div class="flex items-start">
+            <i data-lucide="shield" class="text-indigo-600 w-6 h-6 mr-3 mt-1"></i>
+            <div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">How does blockchain verification work?</h3>
+              <p class="text-gray-600">Each product has a unique digital certificate stored on the blockchain, allowing you to verify materials, manufacturing origin, and ethical compliance at any time.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 pt-12">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+        <!-- Column 1 -->
+        <div>
+          <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Shop</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">New Arrivals</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Custom Designs</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Collections</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Flash Sales</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 2 -->
+        <div>
+          <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Company</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">About Us</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Sustainability</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Careers</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Press</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 3 -->
+        <div>
+          <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Support</h3>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Contact Us</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">FAQs</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Shipping</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-indigo-600">Returns</a></li>
+          </ul>
+        </div>
+        
+        <!-- Column 4 -->
+        <div>
+          <h3 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">Connect</h3>
+          <div class="flex space-x-4 mb-4">
+            <a href="#" class="text-gray-600 hover:text-indigo-600"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+            <a href="#" class="text-gray-600 hover:text-indigo-600"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+            <a href="#" class="text-gray-600 hover:text-indigo-600"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+            <a href="#" class="text-gray-600 hover:text-indigo-600"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+          </div>
+          <p class="text-sm text-gray-500">Subscribe to our newsletter</p>
+          <div class="mt-2 flex">
+            <input type="email" placeholder="Your email" class="px-3 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 flex-grow">
+            <button class="bg-indigo-600 text-white px-4 py-2 rounded-r-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+              <i data-lucide="send" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div class="flex items-center space-x-4 mb-4 md:mb-0">
+          <i data-lucide="credit-card" class="text-gray-600 w-5 h-5"></i>
+          <i data-lucide="lock" class="text-gray-600 w-5 h-5"></i>
+          <i data-lucide="shield-check" class="text-gray-600 w-5 h-5"></i>
+        </div>
+        <p class="text-sm text-gray-500 mb-4 md:mb-0">© 2023 Varnz Fashion. All rights reserved.</p>
+        <div class="flex space-x-6">
+          <a href="#" class="text-sm text-gray-600 hover:text-indigo-600">Privacy Policy</a>
+          <a href="#" class="text-sm text-gray-600 hover:text-indigo-600">Terms of Service</a>
+          <a href="#" class="text-sm text-gray-600 hover:text-indigo-600">Sitemap</a>
+        </div>
+      </div>
+      <div class="mt-4 text-center text-xs text-gray-400">
+        <p>Created with Varnz Page Builder</p>
+      </div>
+    </footer>
+  </div>
+</section>
+
+<script>
+  // Initialize Lucide icons
+  document.addEventListener('DOMContentLoaded', function() {
+    lucide.createIcons();
+    
+    // FAQ accordion functionality
+    const faqItems = document.querySelectorAll('.bg-white.p-6.rounded-lg');
+    faqItems.forEach(item => {
+      const question = item.querySelector('h3');
+      const answer = item.querySelector('p');
+      
+      question.addEventListener('click', () => {
+        answer.classList.toggle('hidden');
+      });
+    });
+  });
+</script>
+<!-- END FAQ & Footer --></body></html>
